@@ -10,3 +10,5 @@
 you also can use nmap to gather information -A
 
 # Directory Enumeration and Brute Forcing
+Directory ffuf
+-     ffuf -w <Wordlist>:FUZZ -u http://10.10.10.16/FUZZ
