@@ -30,3 +30,5 @@ Number of threads
 -     ffuf -w wordlist.txt -u http://example.com/FUZZ -t 40
 filter HTTP status
 -     ffuf -w <Wordlist>:FUZZ -u http://10.10.10.16/FUZZ -fc 404,401
+file extensions
+-     ffuf -w <Wordlist>:FUZZ -u http://10.10.10.16/FUZZ -e .php
