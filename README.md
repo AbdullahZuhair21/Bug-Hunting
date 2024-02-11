@@ -1,6 +1,6 @@
 # Bug-Hunting
 
-#recon & footprinting
+# recon & footprinting
 - https://buitlwith.com
 - Wappalyzer plugin
 - https://securityheaders.com
