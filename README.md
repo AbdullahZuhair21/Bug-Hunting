@@ -36,6 +36,7 @@ recursion
 -     ffuf -w <Wordlist>:FUZZ -u http://10.10.10.16/FUZZ -recursion
 
 # Authentication & Authorization Attacks
+https://appsecexplained.gitbook.io/appsecexplained/
 brute force password
 -     ffuf -reqeust raman.txt -request-proto http -w wordlist.txt
 Clusterbomb attack
