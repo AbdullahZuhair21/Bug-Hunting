@@ -34,3 +34,11 @@ file extensions
 -     ffuf -w <Wordlist>:FUZZ -u http://10.10.10.16/FUZZ -e .php
 recursion
 -     ffuf -w <Wordlist>:FUZZ -u http://10.10.10.16/FUZZ -recursion
+
+# Authentication & Authorization Attacks
+brute force password
+-     ffuf -reqeust raman.txt -request-proto http -w wordlist.txt
+Clusterbomb attack
+- make sure to mention the following in the request file (in burp) "username=FUZZUSER&password=FUZZPASS"
+-     ffuf -request raman.txt -request-proto http -mode clusterbomb -w wordlist.txt:FUZZUSER -w pass.txt:FUZZPASS -fs 3256,3376
+
