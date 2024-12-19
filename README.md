@@ -9,11 +9,11 @@
 
 ## Fix the Query
 ```powershell
-# -- for comment
+-- #for comment
 ```
 
 ## Payloads
 ```powershell
-# ' or 1=1 --
+' or 1=1 --
 
 ```
