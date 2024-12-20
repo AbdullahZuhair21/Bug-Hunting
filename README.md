@@ -1,4 +1,4 @@
-#CBBH PATH
+# CBBH PATH
 # SQL Injection Cheat Sheet
 
 ## Cheat Sheet Reference
